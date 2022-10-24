@@ -31,43 +31,43 @@ void MainWindow::on_pushButton_5_clicked()
     animation2 = new QPropertyAnimation(ui->warningButton , "geometry");
     animation2->setDuration(2000);
     animation2->setStartValue(ui->warningButton->geometry());
-    animation2->setEndValue(QRect(450,150,250,250));
+    animation2->setEndValue(QRect(0,150,160,150));
     animation2->setEasingCurve(curve);
 
     animation3 = new QPropertyAnimation(ui->aboutBox , "geometry");
     animation3->setDuration(2000);
     animation3->setStartValue(ui->aboutBox->geometry());
-    animation3->setEndValue(QRect(450,150,250 , 250));
+    animation3->setEndValue(QRect(0,150,160,150));
     animation3->setEasingCurve(curve);
 
     animation4 = new QPropertyAnimation(ui->QuestionBox , "geometry");
     animation4 -> setDuration(3000);
     animation4->setStartValue(ui->QuestionBox->geometry());
-    animation4->setEndValue(QRect(450,150,250,250));
+    animation4->setEndValue(QRect(0,150,160,150));
     animation4->setEasingCurve(curve);
 
     animation5 = new QPropertyAnimation(ui->infoBox , "geometry");
     animation5 -> setDuration(3000);
     animation5->setStartValue(ui->infoBox->geometry());
-    animation5->setEndValue(QRect(450,150,250,250));
+    animation5->setEndValue(QRect(0,150,160,150));
     animation5->setEasingCurve(curve);
 
-//    animationGroup = new QParallelAnimationGroup();
-//    animationGroup->addAnimation(animation2);
-//    animationGroup->addAnimation(animation3);
-//    animationGroup->addAnimation(animation4);
-//    animationGroup->addAnimation(animation5);
+    animationGroup = new QParallelAnimationGroup();
+    animationGroup->addAnimation(animation2);
+    animationGroup->addAnimation(animation3);
+    animationGroup->addAnimation(animation4);
+    animationGroup->addAnimation(animation5);
 
-//    animationGroup->start();
+    animationGroup->start();
 
-    seqAnimationGroup = new QSequentialAnimationGroup();
+//    seqAnimationGroup = new QSequentialAnimationGroup();
 
-    seqAnimationGroup->addAnimation(animation2);
-    seqAnimationGroup->addAnimation(animation3);
-    seqAnimationGroup->addAnimation(animation4);
-    seqAnimationGroup->addAnimation(animation5);
+//    seqAnimationGroup->addAnimation(animation2);
+//    seqAnimationGroup->addAnimation(animation3);
+//    seqAnimationGroup->addAnimation(animation4);
+//    seqAnimationGroup->addAnimation(animation5);
 
-    seqAnimationGroup->start();
+//    seqAnimationGroup->start();
 
 }
 
@@ -158,7 +158,7 @@ void MainWindow::on_actionhelp_triggered()
 void MainWindow::on_actionfont_triggered()
 {
     bool ok;
-    QFont font = QFontDialog::getFont(&ok, QFont("Times" , 14 , QFont::Bold) , this);
+    QFont font = QFontDialog::getFont(&ok, QFont("Times" , 18 , QFont::Bold) , this);
     ui->textEdit->setFont(font);
 }
 

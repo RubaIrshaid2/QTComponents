@@ -203,7 +203,7 @@
       <x>510</x>
       <y>450</y>
       <width>251</width>
-      <height>47</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -219,8 +219,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>560</y>
+      <x>680</x>
+      <y>510</y>
       <width>462</width>
       <height>48</height>
      </rect>
