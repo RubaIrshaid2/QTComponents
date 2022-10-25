@@ -87,7 +87,7 @@ void MainWindow::on_checkBox_2_stateChanged(int arg1)
 
 void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
 {
-    ui->label_2->setText("The choosen item is : "+arg1);
+    ui->label_2->setText(arg1);
 }
 
 
