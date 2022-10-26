@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/iconsImage">
+        <file>CMakeLists.txt</file>
+    </qresource>
+</RCC>
