@@ -12,6 +12,12 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider , SIGNAL(valueChanged(int)) , ui->progressBar , SLOT(setValue(int)));
 
     ui->comboBox->addItems({"college of inforamtion technology and computer engineering" , "college of applied science " });
+    ui->lineEdit->setText("0");
+
+    QFileSystemModel *model = new QFileSystemModel;
+    model->setRootPath(QDir::currentPath());
+    QTreeView *tree = new QTreeView();
+    tree->setModel(model);
 
 }
 
@@ -23,33 +29,31 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    ui->lineEdit->setText("u clicked the button right now :) (: ");
-
     QEasingCurve curve ;
     curve.setType(QEasingCurve::SineCurve);
 
     animation2 = new QPropertyAnimation(ui->warningButton , "geometry");
     animation2->setDuration(2000);
     animation2->setStartValue(ui->warningButton->geometry());
-    animation2->setEndValue(QRect(0,150,160,150));
+    animation2->setEndValue(QRect(0,1,160,100));
     animation2->setEasingCurve(curve);
 
     animation3 = new QPropertyAnimation(ui->aboutBox , "geometry");
     animation3->setDuration(2000);
     animation3->setStartValue(ui->aboutBox->geometry());
-    animation3->setEndValue(QRect(0,150,160,150));
+    animation3->setEndValue(QRect(0,-1,160,100));
     animation3->setEasingCurve(curve);
 
     animation4 = new QPropertyAnimation(ui->QuestionBox , "geometry");
     animation4 -> setDuration(3000);
     animation4->setStartValue(ui->QuestionBox->geometry());
-    animation4->setEndValue(QRect(0,150,160,150));
+    animation4->setEndValue(QRect(0,-1,160,100));
     animation4->setEasingCurve(curve);
 
     animation5 = new QPropertyAnimation(ui->infoBox , "geometry");
     animation5 -> setDuration(3000);
     animation5->setStartValue(ui->infoBox->geometry());
-    animation5->setEndValue(QRect(0,150,160,150));
+    animation5->setEndValue(QRect(0,1,160,100));
     animation5->setEasingCurve(curve);
 
     animationGroup = new QParallelAnimationGroup();
@@ -115,7 +119,7 @@ void MainWindow::on_background_clicked()
 
 void MainWindow::on_infoBox_clicked()
 {
-    QMessageBox::information(this , "message box " , "This is an Information message box");
+    QMessageBox::information(this , "message box" , "This is an Information message box");
 }
 
 
@@ -158,7 +162,7 @@ void MainWindow::on_actionhelp_triggered()
 void MainWindow::on_actionfont_triggered()
 {
     bool ok;
-    QFont font = QFontDialog::getFont(&ok, QFont("Times" , 18 , QFont::Bold) , this);
+    QFont font = QFontDialog::getFont(&ok, QFont() , this);
     ui->textEdit->setFont(font);
 }
 
@@ -174,5 +178,15 @@ void MainWindow::on_action1_triggered()
 {
     QString fileName = QFileDialog::getOpenFileName(this , "open a file","c://");
     ui->textEdit->setText(fileName);
+}
+
+
+void MainWindow::on_commandLinkButton_clicked()
+{
+    QString s = ui->lineEdit->text();
+    int k = s.toInt();
+    k++;
+    QString inc = QString::number(k);
+    ui->lineEdit->setText(inc);
 }
 

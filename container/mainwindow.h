@@ -8,6 +8,9 @@
 #include <QPropertyAnimation>
 #include <QParallelAnimationGroup>
 #include <QSequentialAnimationGroup>
+#include <string>
+#include <QTreeView>
+#include <QFileSystemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -53,6 +56,8 @@ private slots:
     void on_actioncolor_triggered();
 
     void on_action1_triggered();
+
+    void on_commandLinkButton_clicked();
 
 private:
     Ui::MainWindow *ui;

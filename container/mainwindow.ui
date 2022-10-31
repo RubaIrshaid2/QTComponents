@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1209</width>
-    <height>794</height>
+    <width>1132</width>
+    <height>799</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,8 +28,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>1090</x>
-      <y>660</y>
+      <x>1000</x>
+      <y>640</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -126,9 +126,9 @@
    <widget class="QCheckBox" name="checkBox_2">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>560</y>
-      <width>221</width>
+      <x>490</x>
+      <y>550</y>
+      <width>161</width>
       <height>24</height>
      </rect>
     </property>
@@ -145,8 +145,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>610</y>
+      <x>490</x>
+      <y>600</y>
       <width>231</width>
       <height>27</height>
      </rect>
@@ -195,45 +195,6 @@
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>400</y>
-      <width>251</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>CLICK TO MOVE AND FILL</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>470</y>
-      <width>462</width>
-      <height>48</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-	font: 200 11pt;
-	padding: 10px;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -317,10 +278,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>0</y>
-      <width>181</width>
-      <height>371</height>
+      <x>820</x>
+      <y>10</y>
+      <width>271</width>
+      <height>361</height>
      </rect>
     </property>
     <property name="title">
@@ -329,10 +290,10 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
+       <x>50</x>
+       <y>100</y>
        <width>161</width>
-       <height>331</height>
+       <height>241</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -366,6 +327,25 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Click to move boxes</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
@@ -379,7 +359,7 @@
     <property name="title">
      <string>Appointment details </string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -412,7 +392,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -448,12 +428,11 @@
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Developer meeting &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -504,12 +483,12 @@ hr { height: 1px; border-width: 0; }
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>390</y>
-      <width>361</width>
+      <width>411</width>
       <height>131</height>
      </rect>
     </property>
@@ -546,6 +525,7 @@ hr { height: 1px; border-width: 0; }
       <widget class="QLabel" name="label_7">
        <property name="font">
         <font>
+         <pointsize>11</pointsize>
          <bold>true</bold>
         </font>
        </property>
@@ -556,6 +536,159 @@ hr { height: 1px; border-width: 0; }
      </item>
      <item>
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>400</y>
+      <width>187</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Increment Counter </string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>400</y>
+      <width>291</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Column 1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Column 2 </string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>item1</string>
+     </property>
+     <property name="text">
+      <string>size item 1 </string>
+     </property>
+     <item>
+      <property name="text">
+       <string>item1-1</string>
+      </property>
+      <property name="text">
+       <string>size item 1-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>item1-2</string>
+      </property>
+      <property name="text">
+       <string>size item 1-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>items1-3</string>
+      </property>
+      <property name="text">
+       <string>size item 1-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>item1-4</string>
+      </property>
+      <property name="text">
+       <string>size item 1-4</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>item1-4-1</string>
+       </property>
+       <property name="text">
+        <string>size item 1-4-1</string>
+       </property>
+      </item>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>item2</string>
+     </property>
+     <property name="text">
+      <string>size item 2 </string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>item3</string>
+     </property>
+     <property name="text">
+      <string>size item 3 </string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>460</y>
+      <width>231</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Counter:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	font: 200 11pt;
+	padding: 10px;
+}</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -569,7 +702,7 @@ hr { height: 1px; border-width: 0; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1209</width>
+     <width>1132</width>
      <height>26</height>
     </rect>
    </property>
@@ -615,11 +748,17 @@ hr { height: 1px; border-width: 0; }
     <addaction name="actionfont"/>
     <addaction name="actioncolor"/>
    </widget>
+   <widget class="QMenu" name="menugg">
+    <property name="title">
+     <string>gg</string>
+    </property>
+   </widget>
    <addaction name="menuWhat_d_u_want"/>
    <addaction name="menutst_2"/>
    <addaction name="menuabout"/>
    <addaction name="menuhelp"/>
    <addaction name="menufont"/>
+   <addaction name="menugg"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
