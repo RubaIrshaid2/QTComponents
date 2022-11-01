@@ -11,6 +11,8 @@
 #include <string>
 #include <QTreeView>
 #include <QFileSystemModel>
+#include <QListView>
+#include <QHeaderView>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

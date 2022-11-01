@@ -15,10 +15,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->lineEdit->setText("0");
 
     QFileSystemModel *model = new QFileSystemModel;
-    model->setRootPath(QDir::currentPath());
-    QTreeView *tree = new QTreeView();
-    tree->setModel(model);
+    model->setRootPath("C:/Users/RubaI");
+    ui->treeView->setSortingEnabled(true);
+    ui->treeView->setModel(model);
+    ui->treeView->setAnimated(true);
 
+    QFileSystemModel *modelList = new QFileSystemModel;
+    modelList->setRootPath("C:/Users/RubaI");
+
+    ui->listView->setModel(modelList);
+    ui->listView->setRootIndex(modelList->index("C:/Users/RubaI"));
 }
 
 MainWindow::~MainWindow()
